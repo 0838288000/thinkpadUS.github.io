@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Meta -->
@@ -9,69 +8,257 @@
 <meta name="author" content="">
 <meta name="keywords" content="MediaCenter, Template, eCommerce">
 <meta name="robots" content="all">
-<title>I10 STORE - THINKPAD US - ĐẲNG CẤP CÙNG THỜI GIAN</title>
+<title>I10 STORE - LAPTOP THINKPAD US - ĐẲNG CẤP CÙNG THỜI GIAN...</title>
 
 <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="assets\css\bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 <!-- Customizable CSS -->
-<link rel="stylesheet" href="assets\css\main.css">
-<link rel="stylesheet" href="assets\css\blue.css">
-<link rel="stylesheet" href="assets\css\owl.carousel.css">
-<link rel="stylesheet" href="assets\css\owl.transitions.css">
-<link rel="stylesheet" href="assets\css\animate.min.css">
-<link rel="stylesheet" href="assets\css\rateit.css">
-<link rel="stylesheet" href="assets\css\bootstrap-select.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/blue.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl.transitions.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/rateit.css">
+<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
 
 <!-- Icons/Glyphs -->
-<link rel="stylesheet" href="assets\css\font-awesome.css">
+<link rel="stylesheet" href="assets/css/font-awesome.css">
 
 <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+ 
+<!-- CSS BẢNG THÔNG SỐ + HIỂN THỊ NÚT SDT -->
+<style>
+  table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #e8e8e8;
+    }
+
+  .hotline-phone-ring-wrap {
+  position: fixed;
+  bottom: 84px;
+  left: 0;
+  z-index: 999999;
+  }
+  .hotline-phone-ring {
+  position: relative;
+  visibility: visible;
+  background-color: transparent;
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  z-index: 11;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transition: visibility .5s;
+  left: 0;
+  bottom: 0;
+  display: block;
+  }
+  .hotline-phone-ring-circle {
+  width: 85px;
+  height: 85px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #e60808;
+  -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0.5;
+  }
+  .hotline-phone-ring-circle-fill {
+  width: 55px;
+  height: 55px;
+  top: 25px;
+  left: 25px;
+  position: absolute;
+  background-color: rgba(230, 8, 8, 0.7);
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  }
+  .hotline-phone-ring-img-circle {
+  background-color: #e60808;
+  width: 33px;
+  height: 33px;
+  top: 37px;
+  left: 37px;
+  position: absolute;
+  background-size: 20px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .hotline-phone-ring-img-circle .pps-btn-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  }
+  .hotline-phone-ring-img-circle .pps-btn-img img {
+  width: 20px;
+  height: 20px;
+  }
+  .hotline-bar {
+  position: absolute;
+  background: rgba(230, 8, 8, 0.75);
+  height: 40px;
+  width: 180px;
+  line-height: 40px;
+  border-radius: 3px;
+  padding: 0 10px;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  z-index: 9;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px !important;
+  /* width: 175px !important; */
+  left: 33px;
+  bottom: 37px;
+  }
+  .hotline-bar > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-indent: 50px;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 40px;
+  font-family: Arial;
+  }
+  .hotline-bar > a:hover,
+  .hotline-bar > a:active {
+  color: #fff;
+  }
+  @-webkit-keyframes phonering-alo-circle-anim {
+  0% {
+  -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+  -webkit-opacity: 0.1;
+  }
+  30% {
+  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+  -webkit-opacity: 0.5;
+  }
+  100% {
+  -webkit-transform: rotate(0) scale(1) skew(1deg);
+  -webkit-opacity: 0.1;
+  }
+  }
+  @-webkit-keyframes phonering-alo-circle-fill-anim {
+  0% {
+  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+  opacity: 0.6;
+  }
+  50% {
+  -webkit-transform: rotate(0) scale(1) skew(1deg);
+  opacity: 0.6;
+  }
+  100% {
+  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+  opacity: 0.6;
+  }
+  }
+  @-webkit-keyframes phonering-alo-circle-img-anim {
+  0% {
+  -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+  -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+  -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+  -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+  -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+  -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+  -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  }
+  @media (max-width: 768px) {
+  .hotline-bar {
+  display: none;
+  }
+  }
+
+  /* Mui ten lên dau trang */
+    #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #48c522;
+    border: 2px solid #ccc;
+    color: rgb(245, 10, 10);
+    cursor: pointer;
+    border-radius: 30px;
+    opacity: 0.8;
+    }
+    
+    #myBtn:hover {
+    background-color: #efe11e;
+    }
+</style>
+
+
+
 </head>
 <body class="cnt-home">
+
 <!-- ============================================== HEADER ============================================== -->
 <header class="header-style-1"> 
-  
+
   <!-- ============================================== TOP MENU ============================================== -->
   <div class="top-bar animate-dropdown">
     <div class="container">
-      <div class="header-top-inner">
-        <div class="cnt-account">
-          <ul class="list-unstyled">
-            <li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
-            <li><a href="#"><i class="icon fa fa-heart"></i>Wishlist</a></li>
-            <li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
-            <li><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
-            <li><a href="#"><i class="icon fa fa-lock"></i>Login</a></li>
-          </ul>
-        </div>
-        <!-- /.cnt-account -->
-        
-        <div class="cnt-block">
-          <ul class="list-unstyled list-inline">
-            <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">USD</a></li>
-                <li><a href="#">INR</a></li>
-                <li><a href="#">GBP</a></li>
-              </ul>
-            </li>
-            <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">English </span><b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">English</a></li>
-                <li><a href="#">French</a></li>
-                <li><a href="#">German</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- /.list-unstyled --> 
-        </div>
-        <!-- /.cnt-cart -->
         <div class="clearfix"></div>
-      </div>
       <!-- /.header-top-inner --> 
     </div>
     <!-- /.container --> 
@@ -83,7 +270,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="index.html"> <img src="assets\images\logo.png" width="180" height="80" alt="logo"> </a> 
+          <div class="logo" style="display: flex;"> 
+            <marquee behavior="alternate" direction="up" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" style="background-color: white; text-align: center; font-size: 26px; font-weight: bolder; border: black 5px solid;"> I10 STORE </marquee>
+            <a href="index.html"> <img src="assets/images/logo.png" width="100" height="100" alt="logo"> </a> 
           </div>
           <!-- /.logo --> 
           
@@ -99,16 +288,21 @@
                 <ul class="categories-filter animate-dropdown">
                   <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">THINKPAD<b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- X1 CARBON</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- YOGA</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- MÁY TRẠM: P, EXTREME,...</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- OTHER</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="thinkpad.html">- X1 CARBON</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="thinkpad.html">- YOGA</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="thinkpad.html">- MÁY TRẠM: P, EXTREME,...</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="khac.html">- OTHER</a></li>
                     </ul>
                   </li>
                 </ul>
                 <input class="search-field" placeholder="Tìm kiếm tại đây...">
                 <a class="search-button" href="#"></a> </div>
             </form>
+          </div>
+          <div style="margin-top: 15px; font-size: 16px; font-weight: bold;">
+            <marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="9" style="color: #efe11e;">
+              I10 Store - Chuyên Laptop Thinkpad Mỹ - Chào Mừng Quý Khách, Chúc Quý Khách Chọn Được Sản Phẩm Ưng Ý, Phục Vụ Tốt Công Việc...
+            </marquee>
           </div>
           <!-- /.search-area --> 
           <!-- ============================================================= SEARCH AREA : END ============================================================= --> </div>
@@ -121,7 +315,7 @@
             <div class="items-cart-inner">
               <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
               <div class="basket-item-count"><span class="count">6</span></div>
-              <div class="total-price-basket"> <span class="lbl">Giỏ Hàng -</span> <span class="total-price"> <span class="sign">$</span><span class="value">39</span> </span> </div>
+              <div class="total-price-basket"> <span class="lbl">Giỏ Hàng-</span> <span class="total-price"> <span class="sign">$</span><span class="value">9</span> </span> </div>
             </div>
             </a>
             <ul class="dropdown-menu">
@@ -129,10 +323,10 @@
                 <div class="cart-item product-summary">
                   <div class="row">
                     <div class="col-xs-4">
-                      <div class="image"> <a href="detail.html"><img src="assets\images\cart.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="contact.html"><img src="assets/images/cart.jpg" alt=""></a> </div>
                     </div>
                     <div class="col-xs-7">
-                      <h3 class="name"><a href="index.php?page-detail">Các tính năng đang hoàn thiện</a></h3>
+                      <h3 class="name"><a href="contact.html">Các tính năng đang hoàn thiện</a></h3>
                       <div class="price">Quý khách vui lòng liên hệ/Zalo: 0838288000</div>
                     </div>
                     <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
@@ -165,7 +359,7 @@
   <!-- /.main-header --> 
   
   <!-- ============================================== NAVBAR ============================================== -->
-  <div class="header-nav animate-dropdown">
+  <div class="header-nav animate-dropdown" >
     <div class="container">
       <div class="yamm navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -177,89 +371,62 @@
             <div class="nav-outer">
               <ul class="nav navbar-nav">
                 <li class="active dropdown yamm-fw"> <a href="index.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">TRANG CHỦ</a> </li>
-                <li class="dropdown yamm mega-menu"> <a href="index.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">MÁY TRẠM</a>
+                <li class="dropdown yamm mega-menu"> <a href="maytram.html" data-hover="dropdown" class="dropdown-toggle" >MÁY TRẠM-ĐỒ HOẠ</a>
                   <ul class="dropdown-menu container">
-                    <li>
-                      <div class="yamm-content ">
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
-                            <h2 class="title">X1 EXTREME</h2>
-                            <ul class="links">
-                              <li><a href="#">A</a></li>
-                              <li><a href="#">B </a></li>
-                              <li><a href="#">C</a></li>
-                            </ul>
+                    <a href="maytram.html">
+                      <li>
+                        <div class="yamm-content ">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-menu"> 
+                                <span>Là dòng máy chuyên về đồ hoạ, thiết kế, kỹ thuật, ứng dụng nặng, game,...<br><br>
+                                Sức mạnh đến từ con chip chuyên hiệu năng, CARD đồ hoạ rời, dung lượng RAM lớn,...<br><br>
+                                Cùng với thiết kế tối ưu tản nhiệt, giúp máy có thể hoạt động liên tục nhiều ngày...
+                                </span>
+  
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-menu banner-image"> <img class="img-responsive" src="assets/images/web-products/P1.png" alt=""> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-menu banner-image"> <img class="img-responsive" src="assets/images/web-products/P53.png" alt=""> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-menu banner-image"> <img class="img-responsive" src="assets/images/web-products/p9.jpg " alt=""> </div>
                           </div>
-                          <!-- /.col -->
-                          
-                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
-                            <h2 class="title">THINKPAD P</h2>
-                            <ul class="links">
-                              <li><a href="#">A</a></li>
-                              <li><a href="#">B</a></li>
-                              <li><a href="#">C </a></li>
-                            </ul>
-                          </div>
-                          <!-- /.col -->
-                          
-                         
-                          <!-- /.col -->
-                          
-                          <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets\images\banners\top-menu-banner.png" alt=""> </div>
-                          <!-- /.yamm-content --> 
                         </div>
-                      </div>
-                    </li>
+                      </li>
+                    </a>
                   </ul>
                 </li>
-                <li class="dropdown mega-menu"> 
-                <a href="category.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">YOGA <span class="menu-label hot-menu hidden-xs">NEW</span> </a>
+
+                <li class="dropdown yamm mega-menu"> <a href="vanphong.html" data-hover="dropdown" class="dropdown-toggle" >VĂN PHÒNG-HỌC TẬP<span class="menu-label hot-menu hidden-xs">NEW</span></a>
                   <ul class="dropdown-menu container">
-                    <li>
-                      <div class="yamm-content">
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                            <h2 class="title">X1 YOGA</h2>
-                            <ul class="links">
-                              <li><a href="#">A</a></li>
-                              <li><a href="#">B</a></li>
-                              <li><a href="#">C</a></li>
-                            </ul>
+                    <a href="vanphong.html">
+                      <li>
+                        <div class="yamm-content ">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-menu banner-image"> <img class="img-responsive" src="assets/images/web-products/yoga.png " alt=""> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-menu banner-image"> <img class="img-responsive" src="assets/images/web-products/x1.png" alt=""> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-menu"> 
+                              <span>Là dòng máy có thiết kế nhỏ gọn, mỏng nhẹ, phù hợp di chuyển nhiều, công tác xa...<br><br>
+                              Khung vỏ làm bằng hợp kim carbon siêu bền chắc nhưng lại rất nhẹ, chỉ ~1kg...<br><br>
+                              Dòng laptop doanh nhân đẳng cấp, được rất nhiều các sếp tin dùng.
+                              </span>
+                            </div>
                           </div>
-                          <!-- /.col -->
-                          
-                          <div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-                            <h2 class="title">X13 YOGA</h2>
-                            <ul class="links">
-                              <li><a href="#">A</a></li>
-                              <li><a href="#">B</a></li>
-                              <li><a href="#">C</a></li>
-                            </ul>
-                          </div>
-                          <!-- /.col -->
-                          
-                          
-                          <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets\images\banners\banner-side.png"></a> </div>
                         </div>
-                        <!-- /.row --> 
-                      </div>
-                      <!-- /.yamm-content --> </li>
+                      </li>
+                    </a>
                   </ul>
                 </li>
-                <li class="dropdown hidden-sm"> <a href="category.html">X1 CARBON <span class="menu-label new-menu hidden-xs">HOT</span> </a> </li>
-                <li class="dropdown hidden-sm"> <a href="category.html">THINKPAD T</a> </li>
-                <li class="dropdown hidden-sm"> <a href="category.html">THINKPAD X</a> </li>
-                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">KHÁC</a>
+                
+                <li class="dropdown hidden-sm"> <a href="thinkpad.html">THINKPAD<span class="menu-label new-menu hidden-xs">HOT</span> </a> </li>
+                <li class="dropdown hidden-sm"> <a href="dell.html">  DELL </a> </li>
+                <li class="dropdown hidden-sm"> <a href="blackberry.html">BLACKBERRY</a> </li>
+                <li class="dropdown"> <a href="phukien.html" class="dropdown-toggle" data-hover="dropdown">PHỤ KIỆN</a>
                   <ul class="dropdown-menu pages">
                     <li>
                       <div class="yamm-content">
                         <div class="row">
                           <div class="col-xs-12 col-menu">
                             <ul class="links">
-                              <li><a href="index.html">DELL</a></li>
-                              <li><a href="category.html">LENOVO</a></li>
-                              <li><a href="shopping-cart.html">RAM</a></li>
-                              <li><a href="checkout.html">SSD</a></li>
+                              <li><a href="phukien.html">RAM</a></li>
+                              <li><a href="phukien.html">SSD</a></li>
                             </ul>
                           </div>
                         </div>
@@ -268,7 +435,7 @@
                   </ul>
                 </li>
                 <li class="dropdown"> <a href="contact.html">LIÊN HỆ</a> </li>
-                <li class="dropdown  navbar-right special-menu"> <a href="#">Todays offer</a> </li>
+                <li class="dropdown  navbar-right special-menu"> <a href="sale-product.html">Todays offer</a> </li>
               </ul>
               <!-- /.navbar-nav -->
               <div class="clearfix"></div>
@@ -287,450 +454,353 @@
   </div>
   <!-- /.header-nav --> 
   <!-- ============================================== NAVBAR : END ============================================== --> 
-  
-</header>
 
+  <!-- ============================================== BACK TO HOME ============================================== -->
+    <button id="myBtn" title="Lên đầu trang"><span class="icon fa-stack fa-lg"><i class="fa fa-home fa-stack-1x fa-inverse"></i> </span></button>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("myBtn").style.display = "block";
+    } else {
+    document.getElementById("myBtn").style.display = "none";
+    }
+    }
+    
+    document.getElementById('myBtn').addEventListener("click", function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    });
+    </script>
+  <!-- ============================================== BACK HOME : END ============================================== -->
+
+</header>
 <!-- ============================================== HEADER : END ============================================== -->
   
+
+
+
 <div class="body-content outer-top-xs" id="top-banner-and-menu">
   <div class="container">
     <div class="row"> 
       <!-- ============================================== SIDEBAR ============================================== -->
       <div class="col-xs-12 col-sm-12 col-md-3 sidebar"> 
         
-        <!-- ================================== TOP NAVIGATION ================================== -->
+        <!-- ================================== TOP NAVIGATION - MENU ĐỨNG================================== -->
         <div class="side-menu animate-dropdown outer-bottom-xs">
-          <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>
+          <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> <a style="color: black;" href="all-products.html">TẤT CẢ SẢN PHẨM</a></div>
           <nav class="yamm megamenu-horizontal">
             <ul class="nav">
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-shopping-bag" aria-hidden="true"></i>X1 CARBON</a>
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-3">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">GEN 5</a></li>
-                          <li><a href="#">GEN 6 </a></li>
-                          <li><a href="#">GEN 7</a></li>
-                        </ul>
-                      </div>
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets\images\banners\banner-side.png"></a> </div>
+              <li class="dropdown menu-item"> <a href="dangcon-products.html" class="dropdown-toggle" ><i class="icon fa fa-shopping-bag" aria-hidden="true"></i>Đang Có Sẵn</a> </li>
+              
+              <li class="dropdown menu-item"> <a href="sapve-products.html" class="dropdown-toggle"><i class="icon fa fa-laptop" aria-hidden="true"></i>Sắp Về</a> </li>
 
-                      <!-- /.col -->
-                     
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
-                <!-- /.dropdown-menu --> </li>
-              <!-- /.menu-item -->
+              <li class="dropdown menu-item"> <a href="khachhang.html" class="dropdown-toggle"><i class="icon fa fa-paw" aria-hidden="true"></i>Khách đã mua</a> </li>
+
+              <li class="dropdown menu-item"> <a href="phukien.html" class="dropdown-toggle"><i class="icon fa fa-clock-o" aria-hidden="true"></i>Phụ kiện</a> </li>
               
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-laptop" aria-hidden="true"></i>X1 YOGA</a> 
-                <!-- ================================== MEGAMENU VERTICAL ================================== -->
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-lg-4">
-                        <ul>
-                          <li><a href="#">A</a></li>
-                          <li><a href="#">B</a></li>
-                          <li><a href="#">C</a></li>
-                          
-                        </ul>
-                      </div>
-                      
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets\images\banners\banner-side.png"></a> </div>
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
-                <!-- /.dropdown-menu --> 
-                <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
-              <!-- /.menu-item -->
+              <li class="dropdown menu-item"> <a href="khuyenmai.html" class="dropdown-toggle"><i class="icon fa fa-diamond" aria-hidden="true"></i>Khuyến Mãi</a> </li>
               
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-paw" aria-hidden="true"></i>THINKPAD T</a>
-                <!-- /.dropdown-menu --> </li>
-              <!-- /.menu-item -->
-              
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-clock-o"></i>THINKPAD X</a>
-                <!-- /.dropdown-menu --> </li>
-              <!-- /.menu-item -->
-              
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-diamond"></i>DELL</a>
-                <!-- /.dropdown-menu --> </li>
-              <!-- /.menu-item -->
-              
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-heartbeat"></i>KHÁC</a>
-                <!-- /.dropdown-menu --> </li>
-              <!-- /.menu-item -->
-              
+              <li class="dropdown menu-item"> <a href="sale-product.html" class="dropdown-toggle"><i class="icon fa fa-heartbeat" aria-hidden="true"></i>Giảm Giá Đặc Biệt</a> </li>
+            
             </ul>
-            <!-- /.nav --> 
           </nav>
-          <!-- /.megamenu-horizontal --> 
         </div>
-        <!-- /.side-menu --> 
         <!-- ================================== TOP NAVIGATION : END ================================== --> 
         
+
+        <!-- ============================================== HOT DEALS ============================================== -->
         <!-- ============================================== HOT DEALS ============================================== -->
         <div class="sidebar-widget hot-deals wow fadeInUp outer-bottom-xs">
           <h3 class="section-title">hot deals</h3>
           <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-ss">
             <div class="item">
               <div class="products">
-                <div class="hot-deal-wrapper">
-                  <div class="image"> <img src="assets\images\hot-deals\carbon.png" alt=""> </div>
-                  <div class="sale-offer-tag"><span>~ 9%<br>
-                    off</span></div>
-                  <div class="timing-wrapper">
-                    <div class="box-wrapper">
-                      <div class="date box"> <span class="key">6</span> <span class="value">DAYS</span> </div>
+                <a href="x1g6.html">
+                  <div class="hot-deal-wrapper">
+                    <div class="image"> <img src="assets/images/hot-deals/carbon.png" alt=""> </div>
+                    <div class="sale-offer-tag"><span>~ 9%<br>off</span></div>
+                    <div class="timing-wrapper">
+                      <div class="box-wrapper">
+                        <div class="date box"> <span class="key">6</span> <span class="value">DAYS</span> </div>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="hour box"> <span class="key">15</span> <span class="value">HRS</span> </div>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="minutes box"> <span class="key">29</span> <span class="value">MINS</span> </div>
+                      </div>
                     </div>
-                    <div class="box-wrapper">
-                      <div class="hour box"> <span class="key">15</span> <span class="value">HRS</span> </div>
-                    </div>
-                    <div class="box-wrapper">
-                      <div class="minutes box"> <span class="key">29</span> <span class="value">MINS</span> </div>
-                    </div>
-                    
                   </div>
-                </div>
-                <!-- /.hot-deal-wrapper -->
-                
-                <div class="product-info text-left m-t-20">
-                  <h3 class="name"><a href="detail.html">THINKPAD X1 CARBON GEN 6</a></h3>
-                  <div class="product-price"> <span class="price"> $7.x00.000 </span> <span class="price-before-discount">$8.600.000</span> </div>
-                  <!-- /.product-price --> 
-                  
-                </div>
-                <!-- /.product-info -->
-                
+                  <div class="product-info text-left m-t-20">
+                    <h3 class="name"><a href="x1g6.html">THINKPAD X1 CARBON GEN 6</a></h3>
+                    <div class="product-price"> <span class="price"> $7.x00.000 </span> <span class="price-before-discount">$8.600.000</span> </div>
+                  </div>
+                </a>
+
                 <div class="cart clearfix animate-effect">
                   <div class="action">
-                    <div class="add-cart-button btn-group">
-                      <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                      <button class="btn btn-primary cart-btn" type="button">Thêm vào giỏ </button>
-                    </div>
+                    <a href="contact.html">
+                      <div class="add-cart-button btn-group">
+                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                        <button class="btn btn-primary cart-btn" type="button">Mua ngay</button>
+                      </div>
+                    </a>
                   </div>
-                  <!-- /.action --> 
                 </div>
-                <!-- /.cart --> 
               </div>
             </div>
+
+<!-- item 2 --> 
             <div class="item">
               <div class="products">
-                <div class="hot-deal-wrapper">
-                  <div class="image"> <img src="assets\images\hot-deals\yoga.png" alt=""> </div>
-                  <div class="sale-offer-tag"><span>~ 9%<br>
-                    off</span></div>
-                  <div class="timing-wrapper">
-                    <div class="box-wrapper">
-                      <div class="date box"> <span class="key">6</span> <span class="value">Days</span> </div>
-                    </div>
-                    <div class="box-wrapper">
-                      <div class="hour box"> <span class="key">12</span> <span class="value">HRS</span> </div>
-                    </div>
-                    <div class="box-wrapper">
-                      <div class="minutes box"> <span class="key">29</span> <span class="value">MINS</span> </div>
+                <a href="x1yoga3.html">
+                  <div class="hot-deal-wrapper">
+                    <div class="image"> <img src="assets/images/hot-deals/yoga.png" alt=""> </div>
+                    <div class="sale-offer-tag"><span>~ 8%<br>off</span></div>
+                    <div class="timing-wrapper">
+                      <div class="box-wrapper">
+                        <div class="date box"> <span class="key">6</span> <span class="value">DAYS</span> </div>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="hour box"> <span class="key">29</span> <span class="value">HRS</span> </div>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="minutes box"> <span class="key">38</span> <span class="value">MINS</span> </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- /.hot-deal-wrapper -->
-                
-                <div class="product-info text-left m-t-20">
-                  <h3 class="name"><a href="detail.html">THINKPAD X1 YOGA 3</a></h3>
-                  <div class="rating rateit-small"></div>
-                  <div class="product-price"> <span class="price"> $7.x00.000 </span> <span class="price-before-discount">$8.600.000</span> </div>
-                  <!-- /.product-price --> 
-                  
-                </div>
-                <!-- /.product-info -->
-                
+                  <div class="product-info text-left m-t-20">
+                    <h3 class="name"><a href="x1yoga3.html">THINKPAD X1 YOGA 3</a></h3>
+                    <div class="product-price"> <span class="price"> $7.x00.000 </span> <span class="price-before-discount">$8.600.000</span> </div>
+                  </div>
+                </a>
+
                 <div class="cart clearfix animate-effect">
                   <div class="action">
-                    <div class="add-cart-button btn-group">
-                      <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                      <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                    </div>
+                    <a href="contact.html">
+                      <div class="add-cart-button btn-group">
+                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                        <button class="btn btn-primary cart-btn" type="button">Mua ngay</button>
+                      </div>
+                    </a>
                   </div>
-                  <!-- /.action --> 
                 </div>
-                <!-- /.cart --> 
               </div>
             </div>
+
           </div>
-          <!-- /.sidebar-widget --> 
         </div>
         <!-- ============================================== HOT DEALS: END ============================================== --> 
         
+
         <!-- ============================================== SPECIAL OFFER ============================================== -->
-        
+        <!-- ============================================== SPECIAL OFFER ============================================== -->
         <div class="sidebar-widget outer-bottom-small wow fadeInUp">
           <h3 class="section-title">Special Offer</h3>
           <div class="sidebar-widget-body outer-top-xs">
             <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
               <div class="item">
-                <div class="products special-product">
+                <div class="products special-product" >
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p30.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="x1g5.html"> <img src="assets/images/products/x1g5/1.jpg" title="Thinkpad X1 Carbon gen 5"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="x1g5.html">Thinkpad X1 Carbon Gen 5</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                            <div class="product-price"> <span class="price"> ~5.800.000 </span> </div>
                             <!-- /.product-price --> 
-                            
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p29.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="x1yoga3.html"> <img src="assets/images/products/x1yoga3/6.jpg" title="Thinkpad X1 Yoga 3"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="x1yoga3.html">Thinkpad X1 Yoga 3</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                            <div class="product-price"> <span class="price"> ~7.200.000 </span> </div>
                             <!-- /.product-price --> 
-                            
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p28.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="t14s.html"> <img src="assets/images/products/t14s/2.jpg" title="Thinkpad T14s"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="t14s.html">Thinkpad T14s G3</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
-                            <!-- /.product-price --> 
-                            
+                            <div class="product-price"> <span class="price"> ~12.000.000 </span> </div>
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
                 </div>
               </div>
+
+              <!-- TAB2 --> 
               <div class="item">
                 <div class="products special-product">
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p27.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="#"> <img src="assets/images/products/x1g6/1.jpg" alt="X1 Carbon gen 6"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="#">Thinkpad X1 Carbon Gen 6</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                            <div class="product-price"> <span class="price"> ~6.800.000 </span> </div>
                             <!-- /.product-price --> 
-                            
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p26.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="#"> <img src="assets/images/products/x1extreme/1.jpg" alt="X1 extreme"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="#">Thinkpad X1 Extreme</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                            <div class="product-price"> <span class="price"> ~9.999.000 </span> </div>
                             <!-- /.product-price --> 
-                            
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p25.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="#"> <img src="assets/images/products/p53/1.jpg" alt="P53"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="#">Thinkpad P53</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
-                            <!-- /.product-price --> 
-                            
+                            <div class="product-price"> <span class="price"> ~12.000.000 </span> </div>
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
                 </div>
               </div>
+
+
+              <!-- TAB 3--> 
               <div class="item">
                 <div class="products special-product">
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p24.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="#"> <img src="assets/images/products/blackberry/1.jpg" alt="bb"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="#">BlackBerry</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                            <div class="product-price"> <span class="price"> ~6.888.888 </span> </div>
                             <!-- /.product-price --> 
-                            
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p23.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="#"> <img src="assets/images/products/x1extreme/1.jpg" alt="X1 extreme"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="#">Thinkpad X1 Extreme</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                            <div class="product-price"> <span class="price"> ~9.999.000 </span> </div>
                             <!-- /.product-price --> 
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
+
                   <div class="product">
                     <div class="product-micro">
                       <div class="row product-micro-row">
                         <div class="col col-xs-5">
                           <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets\images\products\p22.jpg" alt=""> </a> </div>
+                            <div class="image"> <a href="#"> <img src="assets/images/products/p53/1.jpg" alt="P53"> </a> </div>
                             <!-- /.image --> 
-                            
                           </div>
-                          <!-- /.product-image --> 
                         </div>
-                        <!-- /.col -->
                         <div class="col col-xs-7">
                           <div class="product-info">
-                            <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                            <h3 class="name"><a href="#">Thinkpad P53</a></h3>
                             <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> $450.99 </span> </div>
-                            <!-- /.product-price --> 
-                            
+                            <div class="product-price"> <span class="price"> ~12.000.000 </span> </div>
                           </div>
                         </div>
-                        <!-- /.col --> 
                       </div>
-                      <!-- /.product-micro-row --> 
                     </div>
-                    <!-- /.product-micro --> 
-                    
                   </div>
                 </div>
               </div>
@@ -739,927 +809,214 @@
           <!-- /.sidebar-widget-body --> 
         </div>
         <!-- /.sidebar-widget --> 
-        <!-- ============================================== SPECIAL OFFER : END ============================================== -->   
+        <!-- ============================================== SPECIAL OFFER : END ============================================== --> 
+
+
+   
+        <!-- ============================================== FEEDBACK============================================== -->
+        <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
+          <div id="advertisement" class="advertisement">
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/1.jpg" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/5.jpg" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/9.jpg" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/10.jpg" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/11.jpg" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/3.jpg" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+          </div>
+          <!-- /.owl-carousel --> 
+        </div>
+        <!-- ============================================== FEEDBACK: END ============================================== -->
         
       </div>
- 
-
-			
-
+      <!-- /.sidemenu-holder --> 
+      <!-- ============================================== SIDEBAR : END ============================================== --> 
 
 
 
-	<div class='col-md-9'>
-    <div class="detail-block">
-	<div class="row  wow fadeInUp">
+
+
+<!-- ============================================== MAIN ============================================== --> 
+<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding: 20px;"> 
+    <h3 style="color:#e60808; margin-bottom: 35px;">Tính năng đang được hoàn thiện...</h3>
+    <a href="index.html" class="buy-button" style="background-color:#48c522; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: block; align-content: center ; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 4px;"> Quay về trang chủ </a>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding: 20px;"> 
+    <section style="font-weight: bold; font-size: 13px;">
+        <div class="footer-bottom">
+            <div class="container" >
+                <div class="col-xs-12 col-sm-6 col-md-5" style="margin-bottom: 25px;">
+                  <div class="module-heading">
+                    <h4 class="module-title">ĐỊA CHỈ</h4>
+                  </div>
+                  <!-- /.module-heading -->
+                  
+                      <div class="module-body">
+                    <ul class="toggle-footer" >
+                      <li class="media">
+                        <div class="pull-left"> <a target="_blank" href="https://www.google.com/maps/place/97+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@16.0741751,108.1472446,20.5z/data=!4m6!3m5!1s0x314218d6a127c463:0xca3f06a2b074d6ea!8m2!3d16.0748938!4d108.1489701!16s%2Fg%2F11p06bcq35?entry=ttu"><span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span></a> </div>
+                        <div class="media-body">
+                          <a target="_blank" href="https://www.google.com/maps/place/97+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@16.0741751,108.1472446,20.5z/data=!4m6!3m5!1s0x314218d6a127c463:0xca3f06a2b074d6ea!8m2!3d16.0748938!4d108.1489701!16s%2Fg%2F11p06bcq35?entry=ttu"> 97/39 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng</a>
+                        </div>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <!-- /.module-body --> 
+                </div>
+                <!-- /.col -->
                 
-	<div class="col-xs-12 col-sm-6 col-md-5 gallery-holder">
-    <div class="product-item-holder size-big single-product-gallery small-gallery">
-
-        <div id="owl-single-product">
-            <div class="single-product-gallery-item" id="slide1">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p8.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p8.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide2">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p9.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p9.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide3">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p10.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p10.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide4">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p11.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p11.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide5">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p12.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p12.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide6">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p13.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p13.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide7">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p14.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p14.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide8">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p15.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p15.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-            <div class="single-product-gallery-item" id="slide9">
-                <a data-lightbox="image-1" data-title="Gallery" href="assets\images\products\p16.jpg">
-                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p16.jpg">
-                </a>
-            </div><!-- /.single-product-gallery-item -->
-
-        </div><!-- /.single-product-slider -->
-
-
-        <div class="single-product-gallery-thumbs gallery-thumbs">
-
-            <div id="owl-single-product-thumbnails">
-                <div class="item">
-                    <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p17.jpg">
-                    </a>
+                <div class="col-xs-12 col-sm-6 col-md-5" style="margin-bottom: 25px;">
+                  <div class="module-heading">
+                    <h4 class="module-title">ĐIỆN THOẠI - ZALO</h4>
+                  </div>
+                  <!-- /.module-heading -->
+                  
+                  <div class="module-body">
+                    <ul class='toggle-footer'>
+                      <li class="media">
+                        <div class="pull-left"> <a target="_blank" href="https://zalo.me/0838288000"> <span class="icon fa-stack fa-lg"> <i class="fa fa-phone fa-stack-1x fa-inverse"></i> </span> </a> </div>
+                        <div class="media-body">
+                          <a target="_blank" href="https://zalo.me/0838288000">
+                          <p>0838288000</p>
+                          </a>
+                        </div>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                  <!-- /.module-body --> 
                 </div>
-
-                <div class="item">
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p18.jpg">
-                    </a>
+                <!-- /.col -->
+                
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                  <div class="module-heading">
+                    <h4 class="module-title">FACEBOOK</h4>
+                  </div>
+                  <!-- /.module-heading -->
+                  
+                  <div class="module-body">
+                    <ul class='toggle-footer'>
+                      <li class="media">
+                        <div class="pull-left"> <a target="_blank" href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </a></div>
+                        <div class="media-body">
+                          <a target="_blank" href="https://www.facebook.com/ThinkpadUS">www.facebook.com/ThinkpadUS </a>
+                        </div>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                  <!-- /.module-body --> 
                 </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p19.jpg">
-                    </a>
-                </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="4" href="#slide4">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p20.jpg">
-                    </a>
-                </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="5" href="#slide5">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p21.jpg">
-                    </a>
-                </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="6" href="#slide6">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p22.jpg">
-                    </a>
-                </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="7" href="#slide7">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p23.jpg">
-                    </a>
-                </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="8" href="#slide8">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p24.jpg">
-                    </a>
-                </div>
-                <div class="item">
-
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="9" href="#slide9">
-                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/products/p25.jpg">
-                    </a>
-                </div>
-            </div><!-- /#owl-single-product-thumbnails -->
-
-            
-
-        </div><!-- /.gallery-thumbs -->
-
-    </div><!-- /.single-product-gallery -->
-</div><!-- /.gallery-holder -->        			
-					<div class='col-sm-6 col-md-7 product-info-block'>
-						<div class="product-info">
-							<h1 class="name">Floral Print Buttoned</h1>
-							
-							<div class="rating-reviews m-t-20">
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="rating rateit-small"></div>
-									</div>
-									<div class="col-sm-8">
-										<div class="reviews">
-											<a href="#" class="lnk">(13 Reviews)</a>
-										</div>
-									</div>
-								</div><!-- /.row -->		
-							</div><!-- /.rating-reviews -->
-
-							<div class="stock-container info-container m-t-10">
-								<div class="row">
-									<div class="col-sm-2">
-										<div class="stock-box">
-											<span class="label">Availability :</span>
-										</div>	
-									</div>
-									<div class="col-sm-9">
-										<div class="stock-box">
-											<span class="value">In Stock</span>
-										</div>	
-									</div>
-								</div><!-- /.row -->	
-							</div><!-- /.stock-container -->
-
-							<div class="description-container m-t-20">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</div><!-- /.description-container -->
-
-							<div class="price-container info-container m-t-20">
-								<div class="row">
-									
-
-									<div class="col-sm-6">
-										<div class="price-box">
-											<span class="price">$800.00</span>
-											<span class="price-strike">$900.00</span>
-										</div>
-									</div>
-
-									<div class="col-sm-6">
-										<div class="favorite-button m-t-10">
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Wishlist" href="#">
-											    <i class="fa fa-heart"></i>
-											</a>
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Add to Compare" href="#">
-											   <i class="fa fa-signal"></i>
-											</a>
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="E-mail" href="#">
-											    <i class="fa fa-envelope"></i>
-											</a>
-										</div>
-									</div>
-
-								</div><!-- /.row -->
-							</div><!-- /.price-container -->
-
-							<div class="quantity-container info-container">
-								<div class="row">
-									
-									<div class="col-sm-2">
-										<span class="label">Qty :</span>
-									</div>
-									
-									<div class="col-sm-2">
-										<div class="cart-quantity">
-											<div class="quant-input">
-								                <div class="arrows">
-								                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-								                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-								                </div>
-								                <input type="text" value="1">
-							              </div>
-							            </div>
-									</div>
-
-									<div class="col-sm-7">
-										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
-									</div>
-
-									
-								</div><!-- /.row -->
-							</div><!-- /.quantity-container -->
-
-							
-
-							
-
-							
-						</div><!-- /.product-info -->
-					</div><!-- /.col-sm-7 -->
-				</div><!-- /.row -->
-                </div>
-				
-				<div class="product-tabs inner-bottom-xs  wow fadeInUp">
-					<div class="row">
-						<div class="col-sm-3">
-							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
-								<li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
-								<li><a data-toggle="tab" href="#review">REVIEW</a></li>
-								<li><a data-toggle="tab" href="#tags">TAGS</a></li>
-							</ul><!-- /.nav-tabs #product-tabs -->
-						</div>
-						<div class="col-sm-9">
-
-							<div class="tab-content">
-								
-								<div id="description" class="tab-pane in active">
-									<div class="product-tab">
-										<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>	
-								</div><!-- /.tab-pane -->
-
-								<div id="review" class="tab-pane">
-									<div class="product-tab">
-																				
-										<div class="product-reviews">
-											<h4 class="title">Customer Reviews</h4>
-
-											<div class="reviews">
-												<div class="review">
-													<div class="review-title"><span class="summary">We love this product</span><span class="date"><i class="fa fa-calendar"></i><span>1 days ago</span></span></div>
-													<div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam suscipit."</div>
-																										</div>
-											
-											</div><!-- /.reviews -->
-										</div><!-- /.product-reviews -->
-										
-
-										
-										<div class="product-add-review">
-											<h4 class="title">Write your own review</h4>
-											<div class="review-table">
-												<div class="table-responsive">
-													<table class="table">	
-														<thead>
-															<tr>
-																<th class="cell-label">&nbsp;</th>
-																<th>1 star</th>
-																<th>2 stars</th>
-																<th>3 stars</th>
-																<th>4 stars</th>
-																<th>5 stars</th>
-															</tr>
-														</thead>	
-														<tbody>
-															<tr>
-																<td class="cell-label">Quality</td>
-																<td><input type="radio" name="quality" class="radio" value="1"></td>
-																<td><input type="radio" name="quality" class="radio" value="2"></td>
-																<td><input type="radio" name="quality" class="radio" value="3"></td>
-																<td><input type="radio" name="quality" class="radio" value="4"></td>
-																<td><input type="radio" name="quality" class="radio" value="5"></td>
-															</tr>
-															<tr>
-																<td class="cell-label">Price</td>
-																<td><input type="radio" name="quality" class="radio" value="1"></td>
-																<td><input type="radio" name="quality" class="radio" value="2"></td>
-																<td><input type="radio" name="quality" class="radio" value="3"></td>
-																<td><input type="radio" name="quality" class="radio" value="4"></td>
-																<td><input type="radio" name="quality" class="radio" value="5"></td>
-															</tr>
-															<tr>
-																<td class="cell-label">Value</td>
-																<td><input type="radio" name="quality" class="radio" value="1"></td>
-																<td><input type="radio" name="quality" class="radio" value="2"></td>
-																<td><input type="radio" name="quality" class="radio" value="3"></td>
-																<td><input type="radio" name="quality" class="radio" value="4"></td>
-																<td><input type="radio" name="quality" class="radio" value="5"></td>
-															</tr>
-														</tbody>
-													</table><!-- /.table .table-bordered -->
-												</div><!-- /.table-responsive -->
-											</div><!-- /.review-table -->
-											
-											<div class="review-form">
-												<div class="form-container">
-													<form role="form" class="cnt-form">
-														
-														<div class="row">
-															<div class="col-sm-6">
-																<div class="form-group">
-																	<label for="exampleInputName">Your Name <span class="astk">*</span></label>
-																	<input type="text" class="form-control txt" id="exampleInputName" placeholder="">
-																</div><!-- /.form-group -->
-																<div class="form-group">
-																	<label for="exampleInputSummary">Summary <span class="astk">*</span></label>
-																	<input type="text" class="form-control txt" id="exampleInputSummary" placeholder="">
-																</div><!-- /.form-group -->
-															</div>
-
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="exampleInputReview">Review <span class="astk">*</span></label>
-																	<textarea class="form-control txt txt-review" id="exampleInputReview" rows="4" placeholder=""></textarea>
-																</div><!-- /.form-group -->
-															</div>
-														</div><!-- /.row -->
-														
-														<div class="action text-right">
-															<button class="btn btn-primary btn-upper">SUBMIT REVIEW</button>
-														</div><!-- /.action -->
-
-													</form><!-- /.cnt-form -->
-												</div><!-- /.form-container -->
-											</div><!-- /.review-form -->
-
-										</div><!-- /.product-add-review -->										
-										
-							        </div><!-- /.product-tab -->
-								</div><!-- /.tab-pane -->
-
-								<div id="tags" class="tab-pane">
-									<div class="product-tag">
-										
-										<h4 class="title">Product Tags</h4>
-										<form role="form" class="form-inline form-cnt">
-											<div class="form-container">
-									
-												<div class="form-group">
-													<label for="exampleInputTag">Add Your Tags: </label>
-													<input type="email" id="exampleInputTag" class="form-control txt">
-													
-
-												</div>
-
-												<button class="btn btn-upper btn-primary" type="submit">ADD TAGS</button>
-											</div><!-- /.form-container -->
-										</form><!-- /.form-cnt -->
-
-										<form role="form" class="form-inline form-cnt">
-											<div class="form-group">
-												<label>&nbsp;</label>
-												<span class="text col-md-offset-3">Use spaces to separate tags. Use single quotes (') for phrases.</span>
-											</div>
-										</form><!-- /.form-cnt -->
-
-									</div><!-- /.product-tab -->
-								</div><!-- /.tab-pane -->
-
-							</div><!-- /.tab-content -->
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-				</div><!-- /.product-tabs -->
-
-				<!-- ============================================== UPSELL PRODUCTS ============================================== -->
-<section class="section featured-product wow fadeInUp">
-	<h3 class="section-title">upsell products</h3>
-	<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
-	    	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img src="assets\images\products\p1.jpg" alt=""></a>
-			</div><!-- /.image -->			
-
-			            <div class="tag sale"><span>sale</span></div>            		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img src="assets\images\products\p2.jpg" alt=""></a>
-			</div><!-- /.image -->			
-
-			            <div class="tag sale"><span>sale</span></div>            		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img src="assets\images\products\p3.jpg" alt=""></a>
-			</div><!-- /.image -->			
-
-			                        <div class="tag hot"><span>hot</span></div>		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img src="assets\images\products\p4.jpg" alt=""></a>
-			</div><!-- /.image -->			
-
-			<div class="tag new"><span>new</span></div>                        		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img src="assets\images\blank.gif" data-echo="assets/images/products/p5.jpg" alt=""></a>
-			</div><!-- /.image -->			
-
-			                        <div class="tag hot"><span>hot</span></div>		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-	
-		<div class="item item-carousel">
-			<div class="products">
-				
-	<div class="product">		
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img src="assets\images\blank.gif" data-echo="assets/images/products/p6.jpg" alt=""></a>
-			</div><!-- /.image -->			
-
-			<div class="tag new"><span>new</span></div>                        		   
-		</div><!-- /.product-image -->
-			
-		
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-									
-			</div><!-- /.product-price -->
-			
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>													
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-													
-						</li>
-	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-      
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-			</div><!-- /.home-owl-carousel -->
-</section><!-- /.section -->
-<!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
-			
-			</div><!-- /.col -->
-			<div class="clearfix"></div>
-		</div><!-- /.row -->
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
-<div id="brands-carousel" class="logo-slider wow fadeInUp">
-
-		<div class="logo-slider-inner">	
-			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
-				<div class="item m-t-15">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand1.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item m-t-10">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand2.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand3.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand4.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand5.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand6.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand2.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand4.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand1.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand5.png" src="assets\images\blank.gif" alt="">
-					</a>	
-				</div><!--/.item-->
-		    </div><!-- /.owl-carousel #logo-slider -->
-		</div><!-- /.logo-slider-inner -->
-	
-</div><!-- /.logo-slider -->
-<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
-</div><!-- /.body-content -->
-
-<!-- ============================================================= FOOTER ============================================================= -->
-<footer id="footer" class="footer color-bg">
-	<div class="footer-bottom">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="module-heading">
-			  <h4 class="module-title">ĐỊA CHỈ</h4>
-			</div>
-			<!-- /.module-heading -->
-			
-			<div class="module-body">
-			  <ul class="toggle-footer" style="">
-				<li class="media">
-				  <div class="pull-left"> <a target="_blank" href="https://www.google.com/maps/place/97+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@16.0741751,108.1472446,20.5z/data=!4m6!3m5!1s0x314218d6a127c463:0xca3f06a2b074d6ea!8m2!3d16.0748938!4d108.1489701!16s%2Fg%2F11p06bcq35?entry=ttu"><span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span></a> </div>
-				  <div class="media-body">
-					<a target="_blank" href="https://www.google.com/maps/place/97+Nguy%E1%BB%85n+L%C6%B0%C6%A1ng+B%E1%BA%B1ng,+Ho%C3%A0+Kh%C3%A1nh+B%E1%BA%AFc,+Li%C3%AAn+Chi%E1%BB%83u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vietnam/@16.0741751,108.1472446,20.5z/data=!4m6!3m5!1s0x314218d6a127c463:0xca3f06a2b074d6ea!8m2!3d16.0748938!4d108.1489701!16s%2Fg%2F11p06bcq35?entry=ttu"> 97/39 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng</a>
-				  </div>
-				</li>
-				
-			  </ul>
-			</div>
-			<!-- /.module-body --> 
-		  </div>
-		  <!-- /.col -->
-		  
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="module-heading">
-			  <h4 class="module-title">ĐIỆN THOẠI - ZALO</h4>
-			</div>
-			<!-- /.module-heading -->
-			
-			<div class="module-body">
-			  <ul class='toggle-footer'>
-				<li class="media">
-				  <div class="pull-left"> <a target="_blank" href="https://zalo.me/0838288000"> <span class="icon fa-stack fa-lg"> <i class="fa fa-mobile fa-stack-1x fa-inverse"></i> </span> </a> </div>
-				  <div class="media-body">
-					<a target="_blank" href="https://zalo.me/0838288000">
-					<p>0838288000</p>
-					</a>
-				  </div>
-				</li>
-			   
-			  </ul>
-			</div>
-			<!-- /.module-body --> 
-		  </div>
-		  <!-- /.col -->
-		  
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="module-heading">
-			  <h4 class="module-title">FACEBOOK</h4>
-			</div>
-			<!-- /.module-heading -->
-			
-			<div class="module-body">
-			  <ul class='toggle-footer'>
-				<li class="media">
-				  <div class="pull-left"> <a target="_blank" href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"> <i class="fa fa-mobile fa-stack-1x fa-inverse"></i> </span> </a></div>
-				  <div class="media-body">
-					<a target="_blank" href="https://www.facebook.com/ThinkpadUS">www.facebook.com/ThinkpadUS </a>
-				  </div>
-				</li>
-			   
-			  </ul>
-			</div>
-			<!-- /.module-body --> 
-		  </div>
-		  <!-- /.col -->
-		  
-		  <div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="module-heading">
-			  <h4 class="module-title">CLICK ĐỂ VỀ ĐẦU TRANG</h4>
-			</div>
-			<!-- /.module-heading -->
-			
-			<div class="module-body">
-			  <ul class='toggle-footer'>
-				<li class="media">
-				  <div class="pull-left"> <a href="index.html"><span class="icon fa-stack fa-lg"><i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i> </span> </a></div>
-				  <div class="media-body">
-					<a href="index.html">HOME </a>
-				  </div>
-				</li>
-			   
-			  </ul>
-			</div>
-			<!-- /.module-body --> 
-		  </div>
-		</div>
-	  </div>
-	</div>
+                <!-- /.col -->
+                
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                  <div class="module-heading">
+                    <h4 class="module-title">NGÂN HÀNG-TECHCOMBANK </h4>
+                  </div>
+                  <!-- /.module-heading -->
+                  
+                  <div class="module-body">
+                    <ul class='toggle-footer'>
+                      <li class="media">
+                        <div class="pull-left"> <a href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"><i class="fa fa-bank fa-stack-1x fa-inverse"></i> </span> </a></div>
+                        <div class="media-body">
+                          <a href="https://www.facebook.com/ThinkpadUS">STK: 1379 388 888 </br> CK: NGUYEN QUANG HIEU </a>
+                        </div>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                  <!-- /.module-body --> 
+                    </div>
+                  </div>
+            </div>
+    </section>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding: 20px; text-align: center;"> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.2291533349358!2d108.1468954!3d16.0741418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142191c54241ea3%3A0x1e56abd50d9a7174!2sThinkpad%20US%20-%20I10%20Store!5e0!3m2!1sen!2s!4v1714934103543!5m2!1sen!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+        
+        <!-- NÚT HIỂN THỊ SDT --> 
+        <div class="hotline-phone-ring-wrap">
+          <div class="hotline-phone-ring">
+          <div class="hotline-phone-ring-circle"></div>
+          <div class="hotline-phone-ring-circle-fill"></div>
+          <div class="hotline-phone-ring-img-circle">
+          <a href="tel:0987654321" class="pps-btn-img">
+          <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+          </a>
+          </div>
+          </div>
+          <div class="hotline-bar">
+          <a target="_blank" href="https://zalo.me/0838288000">
+          <span class="text-hotline">0838.288.000</span>
+          </a>
+          </div>
+        </div>
+        
+        </section>
+        
+</div>
+
+
+
+
+
+
+
+<!-- NÚT HIỂN THỊ SDT --> 
+<div class="hotline-phone-ring-wrap">
+    <div class="hotline-phone-ring">
+    <div class="hotline-phone-ring-circle"></div>
+    <div class="hotline-phone-ring-circle-fill"></div>
+    <div class="hotline-phone-ring-img-circle">
+    <a href="tel:0987654321" class="pps-btn-img">
+    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+    </a>
+    </div>
+    </div>
+    <div class="hotline-bar">
+    <a target="_blank" href="https://zalo.me/0838288000">
+    <span class="text-hotline">0838.288.000</span>
+    </a>
+    </div>
+  </div>
   
   </footer>
-  <!-- ============================================================= FOOTER : END============================================================= --> 
-  
-  <!-- For demo purposes – can be removed on production --> 
-  
-  <!-- For demo purposes – can be removed on production : End --> 
-  
-  <!-- JavaScripts placed at the end of the document so the pages load faster --> 
-  <script src="assets\js\jquery-1.11.1.min.js"></script> 
-  <script src="assets\js\bootstrap.min.js"></script> 
-  <script src="assets\js\bootstrap-hover-dropdown.min.js"></script> 
-  <script src="assets\js\owl.carousel.min.js"></script> 
-  <script src="assets\js\echo.min.js"></script> 
-  <script src="assets\js\jquery.easing-1.3.min.js"></script> 
-  <script src="assets\js\bootstrap-slider.min.js"></script> 
-  <script src="assets\js\jquery.rateit.min.js"></script> 
-  <script type="text/javascript" src="assets\js\lightbox.min.js"></script> 
-  <script src="assets\js\bootstrap-select.min.js"></script> 
-  <script src="assets\js\wow.min.js"></script> 
-  <script src="assets\js\scripts.js"></script>
-  </body>
-  </html>
+    <!-- ============================================================= FOOTER : END============================================================= --> 
+<!-- JavaScripts placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery-1.11.1.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/bootstrap-hover-dropdown.min.js"></script> 
+<script src="assets/js/owl.carousel.min.js"></script> 
+<script src="assets/js/echo.min.js"></script> 
+<script src="assets/js/jquery.easing-1.3.min.js"></script> 
+<script src="assets/js/bootstrap-slider.min.js"></script> 
+<script src="assets/js/jquery.rateit.min.js"></script> 
+<script type="text/javascript" src="assets/js/lightbox.min.js"></script> 
+<script src="assets/js/bootstrap-select.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
