@@ -15,6 +15,7 @@
 
 <!-- Customizable CSS -->
 <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/phone.css">
 <link rel="stylesheet" href="assets/css/blue.css">
 <link rel="stylesheet" href="assets/css/owl.carousel.css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css">
@@ -33,206 +34,6 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
  
-<!-- CODE HIỂN THỊ NÚT SDT -->
-<style>
-  .hotline-phone-ring-wrap {
-  position: fixed;
-  bottom: 84px;
-  left: 0;
-  z-index: 999999;
-  }
-  .hotline-phone-ring {
-  position: relative;
-  visibility: visible;
-  background-color: transparent;
-  width: 110px;
-  height: 110px;
-  cursor: pointer;
-  z-index: 11;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transition: visibility .5s;
-  left: 0;
-  bottom: 0;
-  display: block;
-  }
-  .hotline-phone-ring-circle {
-  width: 85px;
-  height: 85px;
-  top: 10px;
-  left: 10px;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 100%;
-  border: 2px solid #e60808;
-  -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
-  animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
-  transition: all .5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0.5;
-  }
-  .hotline-phone-ring-circle-fill {
-  width: 55px;
-  height: 55px;
-  top: 25px;
-  left: 25px;
-  position: absolute;
-  background-color: rgba(230, 8, 8, 0.7);
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  transition: all .5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  }
-  .hotline-phone-ring-img-circle {
-  background-color: #e60808;
-  width: 33px;
-  height: 33px;
-  top: 37px;
-  left: 37px;
-  position: absolute;
-  background-size: 20px;
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
-  animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  .hotline-phone-ring-img-circle .pps-btn-img {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  }
-  .hotline-phone-ring-img-circle .pps-btn-img img {
-  width: 20px;
-  height: 20px;
-  }
-  .hotline-bar {
-  position: absolute;
-  background: rgba(230, 8, 8, 0.75);
-  height: 40px;
-  width: 180px;
-  line-height: 40px;
-  border-radius: 3px;
-  padding: 0 10px;
-  background-size: 100%;
-  cursor: pointer;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  z-index: 9;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 50px !important;
-  /* width: 175px !important; */
-  left: 33px;
-  bottom: 37px;
-  }
-  .hotline-bar > a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  text-indent: 50px;
-  display: block;
-  letter-spacing: 1px;
-  line-height: 40px;
-  font-family: Arial;
-  }
-  .hotline-bar > a:hover,
-  .hotline-bar > a:active {
-  color: #fff;
-  }
-  @-webkit-keyframes phonering-alo-circle-anim {
-  0% {
-  -webkit-transform: rotate(0) scale(0.5) skew(1deg);
-  -webkit-opacity: 0.1;
-  }
-  30% {
-  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-  -webkit-opacity: 0.5;
-  }
-  100% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  -webkit-opacity: 0.1;
-  }
-  }
-  @-webkit-keyframes phonering-alo-circle-fill-anim {
-  0% {
-  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-  opacity: 0.6;
-  }
-  50% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  opacity: 0.6;
-  }
-  100% {
-  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-  opacity: 0.6;
-  }
-  }
-  @-webkit-keyframes phonering-alo-circle-img-anim {
-  0% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  10% {
-  -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  20% {
-  -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  30% {
-  -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  40% {
-  -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  50% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  100% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  }
-  @media (max-width: 768px) {
-  .hotline-bar {
-  display: none;
-  }
-  }
-
-  /* Mui ten lên dau trang */
-    #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 60px;
-    right: 10px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #48c522;
-    border: 2px solid #ccc;
-    color: rgb(245, 10, 10);
-    cursor: pointer;
-    border-radius: 30px;
-    opacity: 0.8;
-    }
-    
-    #myBtn:hover {
-    background-color: #efe11e;
-    }
-</style>
 
 
 
@@ -800,17 +601,6 @@
         <!-- ============================================== SẢN PHẨM GIÁ TỐT : END ============================================== --> 
 
 
-        <!-- ============================================== THẺ TAG ============================================== -->
-        <div class="sidebar-widget product-tag wow fadeInUp">
-          <h3 class="section-title">THẺ TAG</h3>
-          <div class="sidebar-widget-body outer-top-xs">
-            <div class="tag-list"> <a class="item" title="Phone" href="all-products.html">X1</a> <a class="item active" title="Vest" href="category.html">CARBON</a> <a class="item" title="Smartphone" href="category.html">YOGA</a> <a class="item" title="Furniture" href="category.html">EXTREME</a> <a class="item" title="T-shirt" href="category.html">MÁY TRẠM</a> <a class="item" title="Sweatpants" href="category.html">THINKPAD</a> <a class="item" title="Sneaker" href="category.html">DELL</a>  </div>
-            <!-- /.tag-list --> 
-          </div>
-          <!-- /.sidebar-widget-body --> 
-        </div>
-        <!-- /.sidebar-widget -->
-        <!-- ============================================== THẺ TAG : END ============================================== --> 
         
         <!-- ============================================== FEEDBACK============================================== -->
         <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
@@ -859,49 +649,47 @@
 <!-- ============================================== MAIN ============================================== --> 
 <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding-top: 15px;"> 
   <div>
-    <h4 style="font-weight: bold;">THINKPAD X1 CARBON GEN 6 - LAPTOP DOANH NHÂN ĐẲNG CẤP</h4>
+    <h4 style="font-weight: bold;">THINKPAD X1 YOGA 5 - LAPTOP DOANH NHÂN, XOAY GẬP 360 ĐỘ, CÓ BÚT CẢM ỨNG
+    </h4>
 
-    <div class="col-xs-12 col-sm-12 col-md-7 homebanner-holder" style="background-color: #c9c9c9; margin: 0; padding: 0;"> 
+    <div class="col-xs-12 col-sm-12 col-md-12 homebanner-holder" style="background-color: #cccccc; margin: 0; padding: 0; height: 450px;"> 
       <div id="hero">
         <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
-          <div class="item" style="background-image: url(assets/images/products/x1g6/1.jpg);">
+          <div class="item" style="background-image: url(assets/images/products/x1yoga5/1.jpg); background-size: contain; background-repeat:no-repeat ; height: 450px; background-color: #cccccc;">
             <div class="container-fluid">
               <div class="caption bg-color vertical-center text-left">
                 <div class="slider-header fadeInDown-1">THINKPAD</div>
-                <div class="big-text fadeInDown-1"> X1 CARBON <span class="highlight">GEN 6</span> </div>
+                <div class="big-text fadeInDown-1"> X1 <span class="highlight">YOGA 5</span> </div>
               </div>
             </div>
           </div>
-          <div class="item" style="background-image: url(assets/images/products/x1g6/2.jpg);">
+          <div class="item" style="background-image: url(assets/images/products/x1yoga5/2.jpg); background-size: contain; background-repeat:no-repeat ; height: 450px; background-color: #cccccc;">
           </div>
-          <div class="item" style="background-image: url(assets/images/products/x1g6/3.jpg);">
+          <div class="item" style="background-image: url(assets/images/products/x1yoga5/3.jpg); background-size: contain; background-repeat:no-repeat ; height: 450px; background-color: #cccccc;">
           </div>
-          <div class="item" style="background-image: url(assets/images/products/x1g6/4.jpg);">
+          <div class="item" style="background-image: url(assets/images/products/x1yoga5/4.jpg); background-size: contain; background-repeat:no-repeat ; height: 450px; background-color: #cccccc;">
           </div>
-          <div class="item" style="background-image: url(assets/images/products/x1g6/5.jpg);">
+          <div class="item" style="background-image: url(assets/images/products/x1yoga5/5.jpg); background-size: contain; background-repeat:no-repeat ; height: 450px; background-color: #cccccc;">
           </div>
+          
         </div>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-md-5 homebanner-holder"> 
+    <div class="col-xs-12 col-sm-12 col-md-12 homebanner-holder"> 
       <h4> <strong>Cấu hình:</strong></h4>
-      <table>
+      <table >
         <tr>
-          <th>Thông số</th>
-          <th>Chi tiết</th>
+          <th style="width: 150px;">Thông số</th>
+          <th style="width: 450px;">Chi tiết</th>
         </tr>
         <tr>
           <td>Model</td>
-          <td>ThinkPad X1 Carbon Gen 6</td>
-        </tr>
-        <tr>
-          <td>Màn hình</td>
-          <td>14 inch, fullHD (1920x1080)</td>
+          <td>ThinkPad X1 YOGA 5</td>
         </tr>
         <tr>
           <td>CPU</td>
-          <td>Intel Core i7-8550U</td>
+          <td>Intel Core i7 - thế hệ 10</td>
         </tr>
         <tr>
           <td>RAM</td>
@@ -909,32 +697,36 @@
         </tr>
         <tr>
           <td>Ổ cứng</td>
-          <td>256GB SSD</td>
+          <td>SSD 512GB</td>
+        </tr>
+        <tr>
+          <td>Màn hình</td>
+          <td>Độ phân giải 2K</td>
         </tr>
         <tr>
           <td>Hệ điều hành</td>
           <td>Windows 10 Pro, có thể lên 11</td>
         </tr>
         <tr>
+          <td>Pin</td>
+          <td>Tốt, dùng liên tục ~4 giờ</td>
+        </tr>
+        <tr>
           <td>Trọng lượng</td>
-          <td>1.1 kg</td>
+          <td>1.2 kg</td>
         </tr>
       </table>
-      <h5> <strong>Giá sản phẩm:</strong> 7.900.000 đ</h5>
+      <h5> <strong>Giá sản phẩm:</strong> ~10.000.000 đ (Liên hệ)</h5>
     </div>
   </div>
-  <div class="col-xs-12 col-sm-12 col-md-12 homebanner-holder" style="margin-top: 10px; margin-bottom: 10px;"> 
+  <div class="col-xs-12 col-sm-12 col-md-12 homebanner-holder" style="margin-bottom: 10px;"> 
     <a href="contact.html" class="buy-button" style="background-color: #4CAF50; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: block; align-content: center ; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 4px;"> Mua Ngay </a>
   </div>
   
 
-  <div class="col-xs-12 col-sm-12 col-md-12 homebanner-holder"> 
-    <h4 style="font-weight: bold;">MỘT SỐ CLIP REVIEW SẢN PHẨM</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KFPAg_-gJw8?si=qLFIxewQLCJb-Eny&amp;start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6xF_VdDs7-E?si=YzT07YHdydFAezi_&amp;start=160" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-
+  
 </div>
+
 
 
 
