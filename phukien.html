@@ -15,6 +15,7 @@
 
 <!-- Customizable CSS -->
 <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/i10.css">
 <link rel="stylesheet" href="assets/css/blue.css">
 <link rel="stylesheet" href="assets/css/owl.carousel.css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css">
@@ -33,207 +34,6 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
  
-<!-- CODE HIỂN THỊ NÚT SDT -->
-<style>
-  .hotline-phone-ring-wrap {
-  position: fixed;
-  bottom: 84px;
-  left: 0;
-  z-index: 999999;
-  }
-  .hotline-phone-ring {
-  position: relative;
-  visibility: visible;
-  background-color: transparent;
-  width: 110px;
-  height: 110px;
-  cursor: pointer;
-  z-index: 11;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transition: visibility .5s;
-  left: 0;
-  bottom: 0;
-  display: block;
-  }
-  .hotline-phone-ring-circle {
-  width: 85px;
-  height: 85px;
-  top: 10px;
-  left: 10px;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 100%;
-  border: 2px solid #e60808;
-  -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
-  animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
-  transition: all .5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0.5;
-  }
-  .hotline-phone-ring-circle-fill {
-  width: 55px;
-  height: 55px;
-  top: 25px;
-  left: 25px;
-  position: absolute;
-  background-color: rgba(230, 8, 8, 0.7);
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  transition: all .5s;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  }
-  .hotline-phone-ring-img-circle {
-  background-color: #e60808;
-  width: 33px;
-  height: 33px;
-  top: 37px;
-  left: 37px;
-  position: absolute;
-  background-size: 20px;
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
-  animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  .hotline-phone-ring-img-circle .pps-btn-img {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  }
-  .hotline-phone-ring-img-circle .pps-btn-img img {
-  width: 20px;
-  height: 20px;
-  }
-  .hotline-bar {
-  position: absolute;
-  background: rgba(230, 8, 8, 0.75);
-  height: 40px;
-  width: 180px;
-  line-height: 40px;
-  border-radius: 3px;
-  padding: 0 10px;
-  background-size: 100%;
-  cursor: pointer;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  z-index: 9;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 50px !important;
-  /* width: 175px !important; */
-  left: 33px;
-  bottom: 37px;
-  }
-  .hotline-bar > a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  text-indent: 50px;
-  display: block;
-  letter-spacing: 1px;
-  line-height: 40px;
-  font-family: Arial;
-  }
-  .hotline-bar > a:hover,
-  .hotline-bar > a:active {
-  color: #fff;
-  }
-  @-webkit-keyframes phonering-alo-circle-anim {
-  0% {
-  -webkit-transform: rotate(0) scale(0.5) skew(1deg);
-  -webkit-opacity: 0.1;
-  }
-  30% {
-  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-  -webkit-opacity: 0.5;
-  }
-  100% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  -webkit-opacity: 0.1;
-  }
-  }
-  @-webkit-keyframes phonering-alo-circle-fill-anim {
-  0% {
-  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-  opacity: 0.6;
-  }
-  50% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  opacity: 0.6;
-  }
-  100% {
-  -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-  opacity: 0.6;
-  }
-  }
-  @-webkit-keyframes phonering-alo-circle-img-anim {
-  0% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  10% {
-  -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  20% {
-  -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  30% {
-  -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  40% {
-  -webkit-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  50% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  100% {
-  -webkit-transform: rotate(0) scale(1) skew(1deg);
-  }
-  }
-  @media (max-width: 768px) {
-  .hotline-bar {
-  display: none;
-  }
-  }
-
-  /* Mui ten lên dau trang */
-    #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 60px;
-    right: 10px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #48c522;
-    border: 2px solid #ccc;
-    color: rgb(245, 10, 10);
-    cursor: pointer;
-    border-radius: 30px;
-    opacity: 0.8;
-    }
-    
-    #myBtn:hover {
-    background-color: #efe11e;
-    }
-</style>
-
 
 
 </head>
@@ -445,22 +245,6 @@
 
   <!-- ============================================== BACK TO HOME ============================================== -->
     <button id="myBtn" title="Lên đầu trang"><span class="icon fa-stack fa-lg"><i class="fa fa-home fa-stack-1x fa-inverse"></i> </span></button>
-    <script>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-    
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    document.getElementById("myBtn").style.display = "block";
-    } else {
-    document.getElementById("myBtn").style.display = "none";
-    }
-    }
-    
-    document.getElementById('myBtn').addEventListener("click", function(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    });
-    </script>
   <!-- ============================================== BACK HOME : END ============================================== -->
 
 </header>
@@ -508,17 +292,6 @@
                   <div class="hot-deal-wrapper">
                     <div class="image"> <img src="assets/images/hot-deals/carbon.webp" alt=""> </div>
                     <div class="sale-offer-tag"><span>~ 9%<br>off</span></div>
-                    <div class="timing-wrapper">
-                      <div class="box-wrapper">
-                        <div class="date box"> <span class="key">6</span> <span class="value">DAYS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="hour box"> <span class="key">15</span> <span class="value">HRS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="minutes box"> <span class="key">29</span> <span class="value">MINS</span> </div>
-                      </div>
-                    </div>
                   </div>
                   <div class="product-info text-left m-t-20">
                     <h3 class="name"><a href="x1g6.html">THINKPAD X1 CARBON GEN 6</a></h3>
@@ -546,17 +319,6 @@
                   <div class="hot-deal-wrapper">
                     <div class="image"> <img src="assets/images/hot-deals/yoga.webp" alt=""> </div>
                     <div class="sale-offer-tag"><span>~ 8%<br>off</span></div>
-                    <div class="timing-wrapper">
-                      <div class="box-wrapper">
-                        <div class="date box"> <span class="key">6</span> <span class="value">DAYS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="hour box"> <span class="key">29</span> <span class="value">HRS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="minutes box"> <span class="key">38</span> <span class="value">MINS</span> </div>
-                      </div>
-                    </div>
                   </div>
                   <div class="product-info text-left m-t-20">
                     <h3 class="name"><a href="x1yoga3.html">THINKPAD X1 YOGA 3</a></h3>
@@ -583,232 +345,6 @@
         
 
         <!-- ============================================== SẢN PHẨM GIÁ TỐT ============================================== -->
-        <!-- ============================================== SẢN PHẨM GIÁ TỐT ============================================== -->
-        <div class="sidebar-widget outer-bottom-small wow fadeInUp">
-          <h3 class="section-title">SẢN PHẨM GIÁ TỐT</h3>
-          <div class="sidebar-widget-body outer-top-xs">
-            <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-              <div class="item">
-                <div class="products special-product" >
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="x1g5.html"> <img src="assets/images/products/x1g5/1.webp" title="Thinkpad X1 Carbon gen 5"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="x1g5.html">Thinkpad X1 Carbon Gen 5</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~5.800.000 </span> </div>
-                            <!-- /.product-price --> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="x1yoga3.html"> <img src="assets/images/products/x1yoga3/6.webp" title="Thinkpad X1 Yoga 3"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="x1yoga3.html">Thinkpad X1 Yoga 3</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~7.200.000 </span> </div>
-                            <!-- /.product-price --> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="t14s.html"> <img src="assets/images/products/t14s/2.webp" title="Thinkpad T14s"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="t14s.html">Thinkpad T14s G3</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~12.000.000 </span> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- TAB2 --> 
-              <div class="item">
-                <div class="products special-product">
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets/images/products/x1g6/1.webp" alt="X1 Carbon gen 6"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="#">Thinkpad X1 Carbon Gen 6</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~6.800.000 </span> </div>
-                            <!-- /.product-price --> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets/images/products/x1extreme/1.webp" alt="X1 extreme"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="#">Thinkpad X1 Extreme</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~9.999.000 </span> </div>
-                            <!-- /.product-price --> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets/images/products/p53/1.webp" alt="P53"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="#">Thinkpad P53</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~12.000.000 </span> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- TAB 3--> 
-              <div class="item">
-                <div class="products special-product">
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets/images/products/blackberry/1.webp" alt="bb"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="#">BlackBerry</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~6.888.888 </span> </div>
-                            <!-- /.product-price --> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets/images/products/x1extreme/1.webp" alt="X1 extreme"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="#">Thinkpad X1 Extreme</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~9.999.000 </span> </div>
-                            <!-- /.product-price --> 
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="product">
-                    <div class="product-micro">
-                      <div class="row product-micro-row">
-                        <div class="col col-xs-5">
-                          <div class="product-image">
-                            <div class="image"> <a href="#"> <img src="assets/images/products/p53/1.webp" alt="P53"> </a> </div>
-                            <!-- /.image --> 
-                          </div>
-                        </div>
-                        <div class="col col-xs-7">
-                          <div class="product-info">
-                            <h3 class="name"><a href="#">Thinkpad P53</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="product-price"> <span class="price"> ~12.000.000 </span> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.sidebar-widget-body --> 
-        </div>
-        <!-- /.sidebar-widget --> 
-        <!-- ============================================== SẢN PHẨM GIÁ TỐT : END ============================================== --> 
-
-
-        <!-- ============================================== THẺ TAG ============================================== -->
-        <div class="sidebar-widget product-tag wow fadeInUp">
-          <h3 class="section-title">THẺ TAG</h3>
-          <div class="sidebar-widget-body outer-top-xs">
-            <div class="tag-list"> <a class="item" title="Phone" href="all-products.html">X1</a> <a class="item active" title="Vest" href="category.html">CARBON</a> <a class="item" title="Smartphone" href="category.html">YOGA</a> <a class="item" title="Furniture" href="category.html">EXTREME</a> <a class="item" title="T-shirt" href="category.html">MÁY TRẠM</a> <a class="item" title="Sweatpants" href="category.html">THINKPAD</a> <a class="item" title="Sneaker" href="category.html">DELL</a>  </div>
-            <!-- /.tag-list --> 
-          </div>
-          <!-- /.sidebar-widget-body --> 
-        </div>
-        <!-- /.sidebar-widget -->
         <!-- ============================================== THẺ TAG : END ============================================== --> 
         
         <!-- ============================================== FEEDBACK============================================== -->
@@ -819,7 +355,31 @@
             </div>
             
             <div class="item">
+              <img class="avatar" src="assets/images/khach/2.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/3.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/4.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
               <img class="avatar" src="assets/images/khach/5.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/6.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/7.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/8.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
             </div>
             
             <div class="item">
@@ -835,7 +395,38 @@
             </div>
 
             <div class="item">
-              <img class="avatar" src="assets/images/khach/3.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+              <img class="avatar" src="assets/images/khach/12.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/13.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/14.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+            
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/15.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/16.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/17.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/18.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/19.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
+            </div>
+
+            <div class="item">
+              <img class="avatar" src="assets/images/khach/20.webp" style="object-fit: contain; margin: 0 ;" width="200px" height="250px" alt="Image" >
             </div>
             
           </div>
@@ -852,152 +443,298 @@
       <!-- ============================================== SIDEBAR : END ============================================== --> 
 
 
-
-
-
-<!-- ============================================== MAIN ============================================== --> 
-<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding: 20px;"> 
-    <h3 style="color:#e60808; margin-bottom: 35px;">Tính năng đang được hoàn thiện...</h3>
-    <a href="index.html" class="buy-button" style="background-color:#48c522; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: block; align-content: center ; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 4px;"> Quay về trang chủ </a>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding: 20px;"> 
-    <section style="font-weight: bold; font-size: 13px;">
-        <div class="footer-bottom">
-            <div class="container" >
-                <div class="col-xs-12 col-sm-6 col-md-5" style="margin-bottom: 25px;">
-                  <div class="module-heading">
-                    <h4 class="module-title">ĐỊA CHỈ</h4>
-                  </div>
-                  <!-- /.module-heading -->
-                  
-                      <div class="module-body">
-                    <ul class="toggle-footer" >
-                      <li class="media">
-                        <div class="pull-left"> <a target="_blank" href="https://www.google.com/maps/place/Laptop+Thinkpad+US+-+I10+Store/@16.074142,108.147166,19z/data=!4m6!3m5!1s0x3142191c54241ea3:0x1e56abd50d9a7174!8m2!3d16.0741419!4d108.147166!16s%2Fg%2F11y456dc5g?hl=en&entry=ttu"><span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span></a> </div>
-                        <div class="media-body">
-                          <a target="_blank" href="https://www.google.com/maps/place/Laptop+Thinkpad+US+-+I10+Store/@16.074142,108.147166,19z/data=!4m6!3m5!1s0x3142191c54241ea3:0x1e56abd50d9a7174!8m2!3d16.0741419!4d108.147166!16s%2Fg%2F11y456dc5g?hl=en&entry=ttu"> 97/39 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng</a>
-                        </div>
-                      </li>
-                      
-                    </ul>
-                  </div>
-                  <!-- /.module-body --> 
+      
+      <!-- ============================================== CONTENT ============================================== -->
+      <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder"> 
+        <div class="clearfix filters-container m-t-10">
+            <div class="row">
+              <div class="col col-sm-6 col-md-6">
+                <div class="filter-tabs">
+                  <ul id="filter-tabs" class="nav nav-tabs nav-tab-box nav-tab-fa-icon">
+                    <li class="active"> <a data-toggle="tab" href="#grid-container"><i class="icon fa fa-th-large"></i> Một số phụ kiện tại cửa hàng   </a> </li>
+                  </ul>
                 </div>
-                <!-- /.col -->
-                
-                <div class="col-xs-12 col-sm-6 col-md-5" style="margin-bottom: 25px;">
-                  <div class="module-heading">
-                    <h4 class="module-title">ĐIỆN THOẠI - ZALO</h4>
-                  </div>
-                  <!-- /.module-heading -->
-                  
-                  <div class="module-body">
-                    <ul class='toggle-footer'>
-                      <li class="media">
-                        <div class="pull-left"> <a target="_blank" href="https://zalo.me/0838288000"> <span class="icon fa-stack fa-lg"> <i class="fa fa-phone fa-stack-1x fa-inverse"></i> </span> </a> </div>
-                        <div class="media-body">
-                          <a target="_blank" href="https://zalo.me/0838288000">
-                          <p>0838288000</p>
-                          </a>
+              </div>
+              <div class="col col-sm-12 col-md-2">
+              </div>
+            </div>
+          </div>
+        <div class="search-result-container ">
+          <div id="myTabContent" class="tab-content category-list">
+
+
+            <!-- listtttttttttttttttttt -->
+            <!-- listtttttttttttttttttt -->
+            <!-- listtttttttttttttttttt -->
+            <div class="tab-pane active" id="list-container">
+              <div class="category-product">
+
+                <!-- Ethernet LAN -->
+                <div class="category-product-inner wow fadeInUp">
+                  <div class="products">
+                    <div class="product-list product">
+                      <div class="row product-list-row">
+                        <div class="col col-sm-4 col-lg-4">
+                          <div class="product-image">
+                            <div class="image"> <img src="assets/images/products/phukien/ethernet-lan/1.webp" alt="thinkpad-ethernet"> </div>
+                          </div>
                         </div>
-                      </li>
-                     
-                    </ul>
-                  </div>
-                  <!-- /.module-body --> 
-                </div>
-                <!-- /.col -->
-                
-                <div class="col-xs-12 col-sm-6 col-md-5">
-                  <div class="module-heading">
-                    <h4 class="module-title">FACEBOOK</h4>
-                  </div>
-                  <!-- /.module-heading -->
-                  
-                  <div class="module-body">
-                    <ul class='toggle-footer'>
-                      <li class="media">
-                        <div class="pull-left"> <a target="_blank" href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </a></div>
-                        <div class="media-body">
-                          <a target="_blank" href="https://www.facebook.com/ThinkpadUS">www.facebook.com/ThinkpadUS </a>
+                        <div class="col col-sm-8 col-lg-8">
+                          <div class="product-info">
+                            <h3 class="name"><a href="pk-cap-ethernet.html">Thinkpad Ethernet Lan - Cáp chuyển sang cổng LAN</a></h3>
+                            <div class="rating rateit-small"></div>
+                            <div class="product-price"> <span class="price"> 150.000 </span> <span class="price-before-discount"> 200.000 </span> </div>
+                            <div class="description m-t-10"> Có cả 2 loại đuôi nhỏ và to chuyển sang LAN ạ </div>
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                                    <button class="btn btn-primary cart-btn" type="button"><a href="pk-cap-ethernet.html">Mua ngay</a></button>
+                                  </li>
+                                  <li class="lnk wishlist"> <a class="add-to-cart" href="pk-cap-ethernet.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                  <li class="lnk"> <a class="add-to-cart" href="pk-cap-ethernet.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </li>
-                     
-                    </ul>
-                  </div>
-                  <!-- /.module-body --> 
-                </div>
-                <!-- /.col -->
-                
-                <div class="col-xs-12 col-sm-6 col-md-5">
-                  <div class="module-heading">
-                    <h4 class="module-title">NGÂN HÀNG-TECHCOMBANK </h4>
-                  </div>
-                  <!-- /.module-heading -->
-                  
-                  <div class="module-body">
-                    <ul class='toggle-footer'>
-                      <li class="media">
-                        <div class="pull-left"> <a href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"><i class="fa fa-bank fa-stack-1x fa-inverse"></i> </span> </a></div>
-                        <div class="media-body">
-                          <a href="https://www.facebook.com/ThinkpadUS">STK: 1379 388 888 </br> CK: NGUYEN QUANG HIEU </a>
-                        </div>
-                      </li>
-                     
-                    </ul>
-                  </div>
-                  <!-- /.module-body --> 
+                      </div>
                     </div>
                   </div>
+                </div>
+
+                
+                <!-- Ethernet LAN -->
+                <div class="category-product-inner wow fadeInUp">
+                  <div class="products">
+                    <div class="product-list product">
+                      <div class="row product-list-row">
+                        <div class="col col-sm-4 col-lg-4">
+                          <div class="product-image">
+                            <div class="image"> <img src="assets/images/products/phukien/ethernet-lan/1.webp" alt="thinkpad-ethernet"> </div>
+                          </div>
+                        </div>
+                        <div class="col col-sm-8 col-lg-8">
+                          <div class="product-info">
+                            <h3 class="name"><a href="pk-cap-ethernet.html">Thinkpad Ethernet Lan - Cáp chuyển sang cổng LAN</a></h3>
+                            <div class="rating rateit-small"></div>
+                            <div class="product-price"> <span class="price"> 150.000 </span> <span class="price-before-discount"> 200.000 </span> </div>
+                            <div class="description m-t-10"> Có cả 2 loại đuôi nhỏ và to chuyển sang LAN ạ </div>
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                                    <button class="btn btn-primary cart-btn" type="button"><a href="pk-cap-ethernet.html">Mua ngay</a></button>
+                                  </li>
+                                  <li class="lnk wishlist"> <a class="add-to-cart" href="pk-cap-ethernet.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                  <li class="lnk"> <a class="add-to-cart" href="pk-cap-ethernet.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Ethernet LAN -->
+                <div class="category-product-inner wow fadeInUp">
+                  <div class="products">
+                    <div class="product-list product">
+                      <div class="row product-list-row">
+                        <div class="col col-sm-4 col-lg-4">
+                          <div class="product-image">
+                            <div class="image"> <img src="assets/images/products/phukien/ethernet-lan/1.webp" alt="thinkpad-ethernet"> </div>
+                          </div>
+                        </div>
+                        <div class="col col-sm-8 col-lg-8">
+                          <div class="product-info">
+                            <h3 class="name"><a href="pk-cap-ethernet.html">Thinkpad Ethernet Lan - Cáp chuyển sang cổng LAN</a></h3>
+                            <div class="rating rateit-small"></div>
+                            <div class="product-price"> <span class="price"> 150.000 </span> <span class="price-before-discount"> 200.000 </span> </div>
+                            <div class="description m-t-10"> Có cả 2 loại đuôi nhỏ và to chuyển sang LAN ạ </div>
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                                    <button class="btn btn-primary cart-btn" type="button"><a href="pk-cap-ethernet.html">Mua ngay</a></button>
+                                  </li>
+                                  <li class="lnk wishlist"> <a class="add-to-cart" href="pk-cap-ethernet.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                  <li class="lnk"> <a class="add-to-cart" href="pk-cap-ethernet.html" title="Compare"> <i class="fa fa-signal"></i> </a> </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                      
+  
+
             </div>
-    </section>
-</div>
-<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder" style="background-color: #cccccc; padding: 20px; text-align: center;"> 
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.2291533349358!2d108.1468954!3d16.0741418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142191c54241ea3%3A0x1e56abd50d9a7174!2sThinkpad%20US%20-%20I10%20Store!5e0!3m2!1sen!2s!4v1714934103543!5m2!1sen!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+          </div>
 
 
-        
-        <!-- NÚT HIỂN THỊ SDT --> 
-        <div class="hotline-phone-ring-wrap">
-          <div class="hotline-phone-ring">
-          <div class="hotline-phone-ring-circle"></div>
-          <div class="hotline-phone-ring-circle-fill"></div>
-          <div class="hotline-phone-ring-img-circle">
-          <a href="tel:0838288000" class="pps-btn-img">
-          <img src="./assets/images/logo.webp" alt="Gọi điện thoại" width="50">
-          </a>
-          </div>
-          </div>
-          <div class="hotline-bar">
-          <a target="_blank" href="https://zalo.me/0838288000">
-          <span class="text-hotline">0838.288.000</span>
-          </a>
           </div>
         </div>
-        
-        </section>
-        
+      </div>
+    
+    
+  </div>
+      </div>
+      <!-- ============================================== CONTENT : END ============================================== --> 
+    </div>
+  </div>
 </div>
 
 
 
+
+
+
+
+
+
+
+
+
+      <!-- ============================================================= FOOTER ============================================================= -->
+<footer id="footer" class="footer color-bg">
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="module-heading">
+              <h4 class="module-title">ĐỊA CHỈ</h4>
+            </div>
+            <!-- /.module-heading -->
+            
+            <div class="module-body">
+              <ul class="toggle-footer" style="">
+                <li class="media">
+                  <div class="pull-left"> <a target="_blank" href="https://www.google.com/maps/place/Laptop+Thinkpad+US+-+I10+Store/@16.074142,108.147166,19z/data=!4m6!3m5!1s0x3142191c54241ea3:0x1e56abd50d9a7174!8m2!3d16.0741419!4d108.147166!16s%2Fg%2F11y456dc5g?hl=en&entry=ttu"><span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span></a> </div>
+                  <div class="media-body">
+                    <a target="_blank" href="https://www.google.com/maps/place/Laptop+Thinkpad+US+-+I10+Store/@16.074142,108.147166,19z/data=!4m6!3m5!1s0x3142191c54241ea3:0x1e56abd50d9a7174!8m2!3d16.0741419!4d108.147166!16s%2Fg%2F11y456dc5g?hl=en&entry=ttu"> 97/39 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng</a>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+            <!-- /.module-body --> 
+          </div>
+          <!-- /.col -->
+          
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="module-heading">
+              <h4 class="module-title">ĐIỆN THOẠI - ZALO</h4>
+            </div>
+            <!-- /.module-heading -->
+            
+            <div class="module-body">
+              <ul class='toggle-footer'>
+                <li class="media">
+                  <div class="pull-left"> <a target="_blank" href="https://zalo.me/0838288000"> <span class="icon fa-stack fa-lg"> <i class="fa fa-phone fa-stack-1x fa-inverse"></i> </span> </a> </div>
+                  <div class="media-body">
+                    <a target="_blank" href="https://zalo.me/0838288000">
+                    <p>0838288000</p>
+                    </a>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+            <!-- /.module-body --> 
+          </div>
+          <!-- /.col -->
+          
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="module-heading">
+              <h4 class="module-title">FACEBOOK</h4>
+            </div>
+            <!-- /.module-heading -->
+            
+            <div class="module-body">
+              <ul class='toggle-footer'>
+                <li class="media">
+                  <div class="pull-left"> <a target="_blank" href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span> </a></div>
+                  <div class="media-body">
+                    <a target="_blank" href="https://www.facebook.com/ThinkpadUS">www.facebook.com/ThinkpadUS </a>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+            <!-- /.module-body --> 
+          </div>
+          <!-- /.col -->
+          
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="module-heading">
+              <h4 class="module-title">NGÂN HÀNG-TECHCOMBANK </h4>
+            </div>
+            <!-- /.module-heading -->
+            
+            <div class="module-body">
+              <ul class='toggle-footer'>
+                <li class="media">
+                  <div class="pull-left"> <a href="https://www.facebook.com/ThinkpadUS"><span class="icon fa-stack fa-lg"><i class="fa fa-bank fa-stack-1x fa-inverse"></i> </span> </a></div>
+                  <div class="media-body">
+                    <a target="_blank" href="https://www.facebook.com/ThinkpadUS">STK: 1379 388 888 </br> CK: NGUYEN QUANG HIEU </a>
+                  </div>
+                </li>
+               
+              </ul>
+            </div>
+            <!-- /.module-body --> 
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- NÚT HIỂN THỊ SDT --> 
+  <div class="hotline-phone-ring-wrap">
+    <div class="hotline-phone-ring">
+    <div class="hotline-phone-ring-circle"></div>
+    <div class="hotline-phone-ring-circle-fill"></div>
+    <div class="hotline-phone-ring-img-circle">
+    <a href="tel:0838288000" class="pps-btn-img">
+    <img src="./assets/images/logo.webp" alt="Gọi điện thoại" width="50">
+    </a>
+    </div>
+    </div>
+    <div class="hotline-bar">
+    <a target="_blank" href="https://zalo.me/0838288000">
+    <span class="text-hotline">0838.288.000</span>
+    </a>
+    </div>
+  </div>
   
   </footer>
-    <!-- ============================================================= FOOTER : END============================================================= --> 
-<!-- JavaScripts placed at the end of the document so the pages load faster --> 
-<script src="assets/js/jquery-1.11.1.min.js"></script> 
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/bootstrap-hover-dropdown.min.js"></script> 
-<script src="assets/js/owl.carousel.min.js"></script> 
-<script src="assets/js/echo.min.js"></script> 
-<script src="assets/js/jquery.easing-1.3.min.js"></script> 
-<script src="assets/js/bootstrap-slider.min.js"></script> 
-<script src="assets/js/jquery.rateit.min.js"></script> 
-<script type="text/javascript" src="assets/js/lightbox.min.js"></script> 
-<script src="assets/js/bootstrap-select.min.js"></script> 
-<script src="assets/js/wow.min.js"></script> 
-<script src="assets/js/scripts.js"></script>
-</body>
-</html>
+  <!-- ============================================================= FOOTER : END============================================================= --> 
+  
+  
+  
+  <!-- JavaScripts placed at the end of the document so the pages load faster --> 
+  <script src="assets/js/jquery-1.11.1.min.js"></script> 
+  <script src="assets/js/bootstrap.min.js"></script> 
+  <script src="assets/js/bootstrap-hover-dropdown.min.js"></script> 
+  <script src="assets/js/owl.carousel.min.js"></script> 
+  <script src="assets/js/echo.min.js"></script> 
+  <script src="assets/js/jquery.easing-1.3.min.js"></script> 
+  <script src="assets/js/bootstrap-slider.min.js"></script> 
+  <script src="assets/js/jquery.rateit.min.js"></script> 
+  <script type="text/javascript" src="assets/js/lightbox.min.js"></script> 
+  <script src="assets/js/bootstrap-select.min.js"></script> 
+  <script src="assets/js/wow.min.js"></script> 
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/i10.js"></script>
+
+  </body>
+  </html>
